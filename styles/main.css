@@ -52,3 +52,9 @@ main h3{
 ul {
     line-height: 1.5;
 }
+
+/* Footer */
+footer p{
+    font-size: 90%;
+    text-align: center;
+}
