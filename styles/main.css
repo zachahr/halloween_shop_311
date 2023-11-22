@@ -60,9 +60,25 @@ aside {
     padding: 20px 0;
 }
 
-aside ul {
-    line-height: 1.5;
+#nav_list ul {
+    list-style: none;
+    padding-left: 1.5em;
 }
+
+#nav_list ul li {
+    width: 110px;
+    margin-bottom: .5em;
+    border: 2px solid black;
+}
+#nav_list ul li a {
+    display:block;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: orange;
+    padding: .5em 0 .5em .5em;
+    color: black;
+}
+
 
 /* Section */
 section {
@@ -90,7 +106,7 @@ section h3 {
     margin: .8em 0 .5em 0;
 }
 
-sction p {
+section p {
     margin-bottom: .5em;
 }
 
