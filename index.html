@@ -3,14 +3,14 @@
 <html lang="en"
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Halloween Store</title>
     <link rel="stylesheet" href="styles/main_rwd.css" />
     <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.slicknav.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
-            $("#nav_menu").slicknav({ prependio:"#mobile_menu" });
+        $(document).ready(function () {
+            $("#nav_menu").slicknav({prependTo:"#mobile_menu" });
         });
     </script>
   </head>
@@ -42,16 +42,6 @@
     </nav>
 
     <main>
-        <aside>
-            <nav id="nav_list">
-            <ul>
-                <li><a href="products/props.html">Props</a></li>
-                <li><a href="products/costumes.html">Costumes</a></li>
-                <li><a href="products/special.html">Special FX</a></li>
-                <li><a href="products/masks.html">Masks</a></li>
-           </ul>
-           </nav>
-        </aside>
         <section>
         <h1>Welcome to my site. <br>Please come in stay awhile!</h1>
         <p>I started this web site because Halloween has always been my favorite holiday!
@@ -63,7 +53,7 @@
         </p>
            <h2>Product of the week</h2>
            <p><img src="images/images/cat1.jpg" alt="Deranged cat"width="150"></p>
-            <p><a href=""products/cat.html">20" Deranged cat</a></p>
+            <p><a href="products/cat.html">20" Deranged cat</a></p>
 
            <h3>My guarantee</h3>
            <p>If you aren't completely satisfied with everything you buy from my site, you can return it
@@ -71,6 +61,16 @@
              <strong>No questions asked!</strong>
             </p>
         </section>
+        <aside>
+            <nav id="nav_list">
+            <ul>
+                <li><a href="products/props.html">Props</a></li>
+                <li><a href="products/costumes.html">Costumes</a></li>
+                <li><a href="products/special.html">Special FX</a></li>
+                <li><a href="products/masks.html">Masks</a></li>
+           </ul>
+           </nav>
+        </aside>
     </main>
 
     <footer>
