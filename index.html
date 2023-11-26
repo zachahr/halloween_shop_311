@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 
 <html lang="en"
-<head>
+  <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Halloween Store</title>
-    <link rel="stylesheet" href="styles/main.css">
-</head>
+    <link rel="stylesheet" href="styles/main_rwd.css" />
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#nav_menu").slicknav({ prependio:"#mobile_menu" });
+        });
+    </script>
+  </head>
 
 
 <body>
@@ -14,7 +22,7 @@
         <h2>The Halloween Store</h2>
         <h3>For the little Goblin in all of us!</h3>
     </header>
-
+    <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
         <ul>
           <li><a href="index.html" class="current">Home</a></li> 
