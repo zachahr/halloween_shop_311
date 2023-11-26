@@ -17,41 +17,85 @@ h1, h2, h3, p{
     padding: 0;
 }
 
-a {
-    font-weight: bold;
-    color: orange;
-}
-
-a:link, 
-a:visited {
-    color: orange;
-}
-
-a:hover, 
-a:focus {
-    color: green
-}
-
-
-
-
 /* Header */
 header {
     background-image: linear-gradient(45deg,white 0%, orange 75%, black 100%);
     padding: 15px;
-    border-bottom: 2px solid black;
 }
+
 header img {
     float: left;
     padding-right: 15px;
 }
+
 header h2 {
     font-size: 230%;
 }
 
 header h3{
     font-size: 125%;
+    padding-bottom: 15px;
 }
+
+/* Navigation Menu */
+
+#nav_menu {
+  clear:left;
+}
+
+#nav_menu ul {
+  list-style: none;
+  position: relative;
+}
+
+#nav_menu ul li {
+  float: left;
+}
+
+#nav_menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%
+}
+
+#nav_menu ul ul li {
+  float: none;
+}
+
+#nav_menu ul li:hover > ul {
+  display: block;
+}
+
+#nav_menu > ul::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#nav_menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+#nav_menu ul li a {
+  text-align: center;
+  display: block;
+  width: 160px;
+  padding: .7em 0;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+}
+
+#nav_menu ul li a.current {
+  color: orange;
+}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+  background-color: gray;
+}
+
+
 
 /*Sidebar */
 aside {
@@ -108,6 +152,19 @@ section h3 {
 
 section p {
     margin-bottom: .5em;
+}
+
+section a {
+    font-weight: bold;
+    color: orange;
+}
+
+section a:link, main a:focus {
+    color: orange;
+}
+
+section a:hover, main a:focus {
+    color: green;
 }
 
 /* Footer */
