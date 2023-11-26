@@ -4,7 +4,8 @@ html {
 
 body {
     font-family: Verdana, Arial, Helvetica, Sans-Serif;
-    width: 800px;
+    max-width: 960px;
+    width: 95%;
     background-color: white;
     margin: 0 auto;
     padding: 0;
@@ -20,12 +21,15 @@ h1, h2, h3, p{
 /* Header */
 header {
     background-image: linear-gradient(45deg,white 0%, orange 75%, black 100%);
-    padding: 15px;
+    padding: .9375em 1.875%;
 }
 
 header img {
     float: left;
-    padding-right: 15px;
+    padding-right: 1.875%;
+    width: 10.6%;
+    max-width: 85px;
+    min-width: 40px;
 }
 
 header h2 {
@@ -34,7 +38,7 @@ header h2 {
 
 header h3{
     font-size: 125%;
-    padding-bottom: 15px;
+    padding-bottom: .75em;
 }
 
 /* Navigation Menu */
@@ -50,6 +54,7 @@ header h3{
 
 #nav_menu ul li {
   float: left;
+  width: 20%;
 }
 
 #nav_menu ul ul {
@@ -77,10 +82,13 @@ header h3{
   padding: 0;
 }
 
+#nav_menu ul li:hover ul {
+  width: 100%;
+}
+
 #nav_menu ul li a {
   text-align: center;
   display: block;
-  width: 160px;
   padding: .7em 0;
   text-decoration: none;
   background-color: black;
@@ -96,39 +104,39 @@ header h3{
 }
 
 
-
 /*Sidebar */
 aside {
     float: left;
-    width: 160px;
-    padding: 20px 0;
+    width: 20%;
+    padding: 1.25em 0;
 }
 
 #nav_list ul {
+    width: 60.75%;
     list-style: none;
-    padding-left: 1.5em;
+    padding-left: 15%;
 }
 
 #nav_list ul li {
-    width: 110px;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
     border: 2px solid black;
 }
+
 #nav_list ul li a {
     display:block;
     font-weight: bold;
     text-decoration: none;
     background-color: orange;
-    padding: .5em 0 .5em .5em;
+    padding: .5em 0 .5em .5em 7.27272%;
     color: black;
 }
 
 
 /* Section */
 section {
-    width: 500px;
+    width: 72.5%;
     float: right;
-    padding: 20px 40px 20px 20px;
+    padding: 1.25em 5% 1.25em 2.5%;
 }
 
 section h1 {
@@ -159,7 +167,7 @@ section a {
     color: orange;
 }
 
-section a:link, main a:focus {
+section a:link, main a:visited {
     color: orange;
 }
 
@@ -167,11 +175,16 @@ section a:hover, main a:focus {
     color: green;
 }
 
+section img {
+  width: 30%;
+  max-width: 150px;
+}
+
 /* Footer */
 footer {
     clear: both;
     border-top: 2px solid black;
-    padding: 15px;
+    padding: .9375em 1.875%;
     background-image: linear-gradient(45deg, black 0%, orange 25%, white 100%);
 }
 
